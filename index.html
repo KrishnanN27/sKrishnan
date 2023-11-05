@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sowndarya Krishnan Navaneetha Kannan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#publication">Publication</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sowndarya Krishnan Navaneetha Kannan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#publication" onclick="toggleMenu()">Publication</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="profile__container side-margin">
+
+      <div class="section__text side-margin">
+        <p class="title profile-title-head">Hello, I'm Krish</p> 
+        <p class="profile-title">In my Master's Thesis journey at Mines</p>
+        <div class="contact-button-container">
+          <div class="btn-container">
+            <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV_Sowndarya_Krishnan.pdf')"
+            >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/krishnan-n/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/KrishnanN27'"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="section__pic-container side-margin ">
+        <img src="./assets/profile.png" alt="Krish profile picture" class="profile-pic" />
+      </div>
+    </div>
+    <div class="text-container profile-body-text side-margin">
+     
+      <p>
+        As a Master’s thesis student at the
+        <a href="https://datadrivencps.github.io/website/" target="_blank">
+          <span class="C9DxTc">
+            DataDrivenCPS lab
+          </span>
+        </a>
+         , I work under the guidance of 
+        <a href="https://home.gtf.fyi/" target="_blank">
+          <span class="C9DxTc">
+            Dr. Gabe Fierro
+          </span>
+        </a>
+          , focussing on the accelerating SHACL validation and inference in RDF graphs by treating these processes as dataflow.
+        </p>
+        <p>
+          We are approaching this by developing a novel algebra for SHACL validation and inference that facilitates simplification and manipulation of underlying operations as well as opening the door for improved implementation of certain SHACL operations.
+      
+      
+      <p>I am keen to engage in meaningful discussions and welcome suggestions or ideas that could contribute to my research. Feel free to contact me.
+      </p>
+    </div>
+    <div class="reach-out-text side-margin">
+      <a href="mailto:sowndaryakrishnanna@mines.edu" target="_blank">
+        <span class="C9DxTc ">Reach me at sowndaryakrishnanna [at] mines.edu</span>
+      </a>
+    </div>
+  </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container section-container-column side-margin">
+        <div class="about-profile">
+        <div class="section__pic-container">
+          <img
+            src="./assets/ss.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p class="about-text">
+              I'm Sowndarya Krishnan, a first-year Master’s Thesis student in Computer Science at the Colorado School of Mines,
+              with a bachelor's in Electronics and Communication Engineering from MSEC in Chennai, India. My thesis work is centered on Data & Metadata management
+               within Cyber-physical systems. Before grad school, I gained experience as a Mobile, Frontend, and Cloud engineer at NCompass Tech Studio.
+              I’m driven by the challenges of technology and dedicated to developing effective tech solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+
+
+        <div class="education">
+          <h1>Education</h1>
+          <table>
+            <tr>
+                <td class="titlex">Master’s in Computer Science, Colorado School of Mines</td>
+                <td class="duration">Aug 2023 - Present<span class="elapsed"><br>Ongoing</span></td>
+            </tr>
+        </table>
+          <table>
+              <tr>
+                  <td class="titlex">Bachelor of Engineering in Electronics and Communication Engineering, Meenakshi Sundararajan Engineering College</td>
+                  <td class="duration">Aug 2018 - Jul 2022<span class="elapsed"><br>4 years</span></td>
+              </tr>
+          </table>
+      </div>
+      <div class="experience">
+          <h1>Experience</h1>
+          <table>
+              <tr>
+                  <td class="titlex">Mobile Engineer, Front-end Engineer, Cloud Engineer <a href="//flatt.tech">Ncompass Tech Studio Pvt. Ltd.</a><br><span class="elapsed">Chennai, India</span></td>
+                  <td class="duration">May 2022 - May 2023<span class="elapsed"><br>1 year</span></td>
+              </tr>
+              <tr>
+                  <td colspan=2 class="description">
+                      &raquo; Led UI change initiatives for Android app, increasing downloads.
+                      <br>&raquo; Developed custom components improving integration across business groups.
+                      <br>&raquo; Implemented CI/CD practices, reducing deployment times.
+                  </td>
+              </tr>
+          </table>
+      </div>
+      
+      
+
+  </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#publication'"
+      />
+    </section>
+    <section id="publication">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Publication</h1>
+      <div class="experience-details-container side-margin">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Coming Soon...</h2>
+            <div class="article-container">
+              <!-- Write a line like "Some day there will be some nice publications here" in centre -->
+
+              <div class="reach-out-text">
+                <span class="C9DxTc">Some day there will be some nice publications here</span>
+              </div>
+             
+          </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:krishnaofficial27@gmail.com">krishnaofficial27@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/krishnan-n/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#desktop-nav">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#publication">Publication</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
